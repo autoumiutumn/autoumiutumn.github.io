@@ -1,0 +1,47 @@
+.wrapperMain{
+  margin: 1%;
+
+  padding: 2% 2%;
+  text-align: center;
+}
+.textBox{
+  margin: 20px;
+  padding: 5px;
+
+  border-left: 12px #b857c9 solid;
+  border-radius: 12px;
+
+  background-color: #e8e1ee;
+  
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+.textBox.h1{
+  padding: 7px;
+  font-family: 'Tilt Neon', cursive;
+}
+.ital{
+  font-style: italic;
+  color: #777;
+}
+
+.aboutMeBox{
+  margin: 10px 35%;
+  padding: 5px;
+
+  border: 6px #b857c9 solid;
+  border-radius: 9px;
+  background-color: #e8e1ee;
+
+  font-family: 'Roboto', sans-serif;
+}
+.flipH{
+  display: inline-block;
+  margin: 20px 5px;
+  
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}

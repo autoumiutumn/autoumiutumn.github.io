@@ -1,0 +1,28 @@
+ul.navUl {
+  list-style-type: none;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navLi {
+  float: left;
+}
+
+li.navLiA {
+  float: left;
+  background-color: #b857c9;
+}
+
+li.navLi a, li.navLiA a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  /* I may cause problems! Delete if font issues */
+  font-family: 'Roboto', sans-serif;
+}

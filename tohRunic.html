@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Scry - TOH Runic</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon3.svg">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--   <link href="/fonts/OwlHouseRunic.ttf" rel="stylesheet" /> -->
+  <!-- CSS -->
+  <link href="/css/navBar_style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/common_style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/ohr_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navDiv">
+     <ul class="navUl">
+      <li class="navLi"><a href="/index.html">Home</a></li>
+      <li class="navLi"><a href="/matrixm.html">Matrix Multip.</a></li>
+      <li class="navLiA"><a>TOH Runic</a></li>
+     </ul> 
+  </div>
+  <div class="mainWrapper">
+    <div class="IOboxWrapper">
+      <div id="entryBox">
+      </div>
+    </div>
+  </br>
+    <div class="controlerWrapper">
+      <button id="controllerSwap">___ MODE</button>
+    </br>
+      <div class="keyboardWrapper">
+        <div class="runeKeyboard">
+          <!-- Consonants 1 -->
+          <input id="btn_b" class="keyBru" type="button" value="b" onclick="inputRune(this);" />
+          <input id="btn_d" class="keyBru" type="button" value="d" onclick="inputRune(this);" />
+          <input id="btn_f" class="keyBru" type="button" value="f" onclick="inputRune(this);" />
+          <input id="btn_g" class="keyBru" type="button" value="g" onclick="inputRune(this);" />
+          <input id="btn_h" class="keyBru" type="button" value="h" onclick="inputRune(this);" />
+          <input id="btn_y" class="keyBru" type="button" value="y" onclick="inputRune(this);" />
+          <input id="btn_k" class="keyBru" type="button" value="k" onclick="inputRune(this);" />
+          <input id="btn_c" class="keyBru" type="button" value="c" onclick="inputRune(this);" />
+          <input id="btn_l" class="keyBru" type="button" value="l" onclick="inputRune(this);" />
+          <input id="btn_m" class="keyBru" type="button" value="m" onclick="inputRune(this);" />
+          <input id="btn_n" class="keyBru" type="button" value="n" onclick="inputRune(this);" />
+          <input id="btn_N" class="keyBru" type="button" value="N" onclick="inputRune(this);" />
+          <br />
+          <!-- Consonants 2 -->
+          <input id="btn_p" class="keyBru" type="button" value="p" onclick="inputRune(this);" />
+          <input id="btn_r" class="keyBru" type="button" value="r" onclick="inputRune(this);" />
+          <input id="btn_s" class="keyBru" type="button" value="s" onclick="inputRune(this);" />
+          <input id="btn_S" class="keyBru" type="button" value="S" onclick="inputRune(this);" />
+          <input id="btn_t" class="keyBru" type="button" value="t" onclick="inputRune(this);" />
+          <input id="btn_T" class="keyBru" type="button" value="T" onclick="inputRune(this);" />
+          <input id="btn_v" class="keyBru" type="button" value="v" onclick="inputRune(this);" />
+          <input id="btn_w" class="keyBru" type="button" value="w" onclick="inputRune(this);" />
+          <input id="btn_z" class="keyBru" type="button" value="z" onclick="inputRune(this);" />
+          <input id="btn_Z" class="keyBru" type="button" value="Z" onclick="inputRune(this);" />
+          <input id="btn_j" class="keyBru" type="button" value="j" onclick="inputRune(this);" />
+          <br />
+          <!-- Vowels -->
+          <input id="btn_a" class="keyBru" type="button" value="a" onclick="inputRune(this);" />
+          <input id="btn_A" class="keyBru" type="button" value="A" onclick="inputRune(this);" />
+          <input id="btn_B" class="keyBru" type="button" value="B" onclick="inputRune(this);" />
+          <input id="btn_E" class="keyBru" type="button" value="E" onclick="inputRune(this);" />
+          <input id="btn_e" class="keyBru" type="button" value="e" onclick="inputRune(this);" />
+          <input id="btn_u" class="keyBru" type="button" value="u" onclick="inputRune(this);" />
+          <input id="btn_U" class="keyBru" type="button" value="U" onclick="inputRune(this);" />
+          <input id="btn_o" class="keyBru" type="button" value="o" onclick="inputRune(this);" />
+          <input id="btn_O" class="keyBru" type="button" value="O" onclick="inputRune(this);" />
+          <input id="btn_P" class="keyBru" type="button" value="P" onclick="inputRune(this);" />
+          <input id="btn_i" class="keyBru" type="button" value="i" onclick="inputRune(this);" />
+          <input id="btn_I" class="keyBru" type="button" value="I" onclick="inputRune(this);" />
+          <br />
+          <!-- Specials -->
+          <input id="btnUk" class="keyB" type="button" value="Unknown" onclick="inputRune_unk();" />
+          <input id="btnsp" class="keyB" type="button" value="Space" onclick="inputRune_chr(' ');" />
+          <input id="btnDel" class="keyB" type="button" value="Backspace" onclick="delChr();" />
+          <input id="btnCle" class="keyB" type="button" value="Clear" onclick="clearBox();" />
+          <input id="btnEnt" class="keyB" type="button" value="Enter" onclick="subm('r');" />
+        </div>
+        <div class="ipaKeyboard">
+          <!-- [Consonants 1] -->
+          <span class="keepTogether"><button value="b" class="keyBL"> b </button><button value="b" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="d" class="keyBL"> d </button><button value="d" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="f" class="keyBL"> f </button><button value="f" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="g" class="keyBL"> g </button><button value="g" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="j" class="keyBL"> j </button><button value="j" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="h" class="keyBL"> h </button><button value="h" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="c" class="keyBL"> c/k </button><button value="c" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ch" class="keyBL"> ch </button><button value="ch" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          </br>
+          
+          <!-- [Consonants 2] -->
+          <span class="keepTogether"><button value="l" class="keyBL"> l </button><button value="l" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="m" class="keyBL"> m </button><button value="m" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="n" class="keyBL"> n </button><button value="n" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ng" class="keyBL"> ng </button><button value="ng" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="p" class="keyBL"> p </button><button value="p" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="r" class="keyBL"> r </button><button value="r" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="s" class="keyBL"> s </button><button value="s" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="sh" class="keyBL"> sh </button><button value="sh" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+           </br>
+          
+          <!-- [Consonants 3] -->
+          <span class="keepTogether"><button value="t" class="keyBL"> t </button><button value="t" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="th" class="keyBL"> th </button><button value="th" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="v" class="keyBL"> v </button><button value="v" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="w" class="keyBL"> w </button><button value="w" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="y" class="keyBL"> y </button><button value="y" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="z" class="keyBL"> z </button><button value="z" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="zh" class="keyBL"> zh </button><button value="zh" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+        </br>
+        </br>
+          <!-- [Vowels 1] -->
+          <span class="keepTogether"><button value="schwa" class="keyBL"> ə </button><button value="schwa" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ah" class="keyBL"> AH </button><button value="ah" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="a" class="keyBL"> A </button><button value="a" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="aw" class="keyBL"> AW </button><button value="aw" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="eh" class="keyBL"> EH </button><button value="eh" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="uh" class="keyBL"> UH </button><button value="uh" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+        </br>
+
+          <!-- [Vowels 2] -->
+          <span class="keepTogether"><button value="u" class="keyBL"> U </button><button value="u" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="oh" class="keyBL"> OH </button><button value="oh" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="uu" class="keyBL"> UU </button><button value="uu" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="oo" class="keyBL"> OO </button><button value="oo" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ih" class="keyBL"> IH </button><button value="ih" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ee" class="keyBL"> EE </button><button value="ee" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+        </br>
+
+          <!-- [Vowels 3] -->
+          <span class="keepTogether"><button value="eye" class="keyBL"> EYE </button><button value="eye" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ow" class="keyBL"> OW </button><button value="ow" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ei" class="keyBL"> EI </button><button value="ei" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="oy" class="keyBL"> OY </button><button value="oy" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="ea" class="keyBL"> EA </button><button value="ea" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+          <span class="keepTogether"><button value="oa" class="keyBL"> OA </button><button value="oa" onclick="playS(this)" class="keyBR"><i class="material-icons" style="font-size:15px;">volume_up</i></button></span>
+        </br>
+        </br>
+
+          <!-- [Control] -->
+          <button onclick="ipaSpace()" class="keyBipa"><i class="material-icons" style="font-size:15px;">space_bar</i></button></span>
+          <button onclick="delChr()" class="keyBipa"><i class="material-icons" style="font-size:15px;">backspace</i></button></span>
+          <button onclick="clearBox()" class="keyBipa"><i class="material-icons" style="font-size:15px;">delete</i></button></span>
+          <button onclick="subm()" class="keyBipa"><i class="material-icons" style="font-size:15px;">login</i></button></span>
+        </div>
+      </div>
+    </div>
+  </br>
+    <div class="IOboxWrapper">
+      <div id="outPBox">
+      </div>
+    </div>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  <script scr="/js/common_script.js"></script>
+  <script src="/js/ohr_script.js"></script>
+</body>
+
+</html>

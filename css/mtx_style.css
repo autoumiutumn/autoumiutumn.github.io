@@ -1,0 +1,16 @@
+.wipBox{
+  margin: 10px 35%;
+  padding: 25px 5px;
+  text-align: center;
+
+  border: 6px #d95048 solid;
+  border-radius: 9px;
+  background-color: #f9dedd;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.material-symbols-outlined.md-48 {
+  font-size: 48px;
+  margin: 4px;
+}

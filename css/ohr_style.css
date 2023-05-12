@@ -1,0 +1,113 @@
+.mainWrapper{
+  margin: 1%;
+}
+
+@font-face {
+  font-family: OwlHouseRunic;
+  src: url(/fonts/OwlHouseRunic.ttf);
+}
+
+
+.IOboxWrapper{
+  margin: auto;
+  width: 85%;
+  border: 3px solid purple;
+
+  padding: 2% 2%;
+  text-align: center;
+}
+#entryBox{
+  margin: auto;
+  background-color: #d2d2db;
+  text-align: left;
+  padding: 1% 1%;
+}
+#outPBox{
+  margin: auto;
+  background-color: #d2d2db;
+  text-align: left;
+  padding: 1% 1%;
+}
+.outPBoxRune{
+  font-family: OwlHouseRunic;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
+
+.runeBit{
+  font-family: OwlHouseRunic;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  
+  background-color: #9d9db0;
+  border: 3px solid #72728d;
+
+  padding: 2pt;
+  margin: 2pt;
+  display: inline-block;
+  white-space: pre;
+}
+.runeBit:last-child{
+  margin-right: 0pt
+}
+.ipaBit{
+  background-color: #9d9db0;
+  border: 3px solid #72728d;
+
+  padding: 2pt;
+  margin: 2pt;
+  display: inline-block;
+  white-space: pre;
+}
+.ipaBit:last-child{
+  margin-right: 0pt
+}
+
+
+
+.controlerWrapper{
+  margin: auto;
+  width: 70%;
+  border: 3px solid purple;
+
+  padding: 2% 2%;
+  text-align: center;
+}
+#controllerSwap{
+  width: 90%;
+  border: 3px solid purple;
+  
+  padding: 15pt;
+}
+.keyboardWrapper{
+  width: 99%;
+  margin: 1%;
+}
+
+
+.runeKeyboard{
+  display: none;
+}
+.keyBru{
+  font-family: OwlHouseRunic;
+  font-size: 25px;
+}
+
+
+.ipaKeyboard{
+  display: none;
+}
+span.keepTogether{
+  white-space: nowrap;
+}
+.keyBL{
+  border-radius: 10px 0px 0px 10px;
+  font-size: 15px
+}
+.keyBR{
+  border-radius: 0px 10px 10px 0px;
+  font-size: 15px  /* MUST EDIT FONT SIZE IN HTML ITSELF*/
+}
+.keyBipa{
+  font-size: 12px
+}
