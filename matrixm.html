@@ -16,6 +16,9 @@
   <link href="/css/common_style.css" rel="stylesheet" type="text/css" />
   <link href="/css/mtx_style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- JS -->
+   <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
 </head>
 
 <body>
@@ -27,14 +30,47 @@
      </ul> 
   </div>
   <div class="wrapperMain">
-    <div class="wipBox">
+    <div class="n_inpsWrap">
+      <div class="n_inWrap">
+        <div class="n_inputWrapper">
+          <div class="n_inputBox"></div>
+          <div class="n_inputRowWrapper"></div>
+          <div class="n_inputColumnWrapper"></div>
+        </div>
+      </div>
+      <div class="n_keWrap">
+        <div class="n_keyWrapper">
+          <div class="n_inputDie"></div>
+          <div class="n_inputBox"></div>
+          <div class="n_inputRowWrapper"></div>
+          <div class="n_inputColumnWrapper"></div>
+        </div>
+      </div>
+    </div>
+    <div class="n_encDecWrapper">
+      <button class="n_encryptButton">ENCRYPT</button>
+      <button class="n_decryptButton">DECRYPT</button>
+    </div>
+    <div class="n_outpWrap"></div>
+    <div class="wipBox" style="display: hidden;">
       <span class="material-symbols-outlined md-48">
         report
       </span></br>
       <p style="margin: 4px">Sorry, this isn't available yet!</p>
     </div>
+    <div class="inputBox">
+      <div class="inputWrapper"></div>
+      <div class="inputSizerWrapper"></div>
+    </div>
+    <div class="keyBox">
+      <div class="keyWrapper"></div>
+      <div class="keySizerWrapper"></div>
+    </div>
+    
   </div>
   <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
   <script scr="/js/common_script.js"></script>
   <script src="/js/mtx_script.js"></script>
 </body>
