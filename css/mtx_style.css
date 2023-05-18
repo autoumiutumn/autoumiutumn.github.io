@@ -59,6 +59,10 @@ input[type=number] {
   
   font-size:1.5em;
 }
+.n_inputBox *{
+  min-height: 0;
+  min-width: 0;
+}
 /* .n_inputRowWrapper{
   
 } */
