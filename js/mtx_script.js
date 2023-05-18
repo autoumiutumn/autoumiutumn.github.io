@@ -48,7 +48,7 @@ function encodeMatrix(inpMat, keyMat){
     }
   
     
-    $(`.n_inputBox:eq(${ind})`).css('grid-template-columns',`repeat(${columns[ind]+1}, 1.25em)`)
+    $(`.n_inputBox:eq(${ind})`).css('grid-template-columns',`repeat(${columns[ind]+1}, 1fr)`)
     columns[ind]++
   }
   function removeColumns(ind){
@@ -61,7 +61,7 @@ function encodeMatrix(inpMat, keyMat){
     }
   
     
-    $(`.n_inputBox:eq(${ind})`).css('grid-template-columns',`repeat(${columns[ind]-1}, 1.25em)`)
+    $(`.n_inputBox:eq(${ind})`).css('grid-template-columns',`repeat(${columns[ind]-1}, 1fr)`)
     columns[ind]--
   }
   function addRows(ind){
